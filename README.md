@@ -9,7 +9,7 @@ eslint+prettier+stylelint + husky+Lint-staged for vue@2 and egg.js（excluding .
 
         1. 🗑删除冲突的依赖（删除eslint、stylelint、prettier、以及他们仨的各种依赖库、config、plugin）
 
-            `npm uninstall @umijs/fabric stylelint-config-prettier stylelint-declaration-block-no-ignored-properties && npm uninstall eslint eslint-plugin-vue @html-eslint/parser @html-eslint/eslint-plugin eslint-plugin-html eslint-config-egg eslint-config-prettier  stylelint stylelint-config-standard stylelint-config-css-modules stylelint-scss stylelint-config-standard-less postcss-less stylelint-config-standard-scss postcss-scss postcss-html stylelint-config-html stylelint-config-standard-vue  prettier`
+            `npm uninstall @umijs/fabric stylelint-config-prettier stylelint-declaration-block-no-ignored-properties @typescript-eslint/eslint-plugin && npm uninstall eslint eslint-plugin-vue @html-eslint/parser @html-eslint/eslint-plugin eslint-plugin-html eslint-config-egg eslint-config-prettier  stylelint stylelint-config-standard stylelint-config-css-modules stylelint-scss stylelint-config-standard-less postcss-less stylelint-config-standard-scss postcss-scss postcss-html stylelint-config-html stylelint-config-standard-vue  prettier`
         2. 🔨安装依赖
 
             `npm i --save-dev fabric-demo@1`
@@ -19,7 +19,7 @@ eslint+prettier+stylelint + husky+Lint-staged for vue@2 and egg.js（excluding .
 
         1. 🗑删除冲突的依赖
 
-            `npm uninstall @umijs/fabric stylelint-config-prettier stylelint-declaration-block-no-ignored-properties`
+            `npm uninstall @umijs/fabric stylelint-config-prettier stylelint-declaration-block-no-ignored-properties @typescript-eslint/eslint-plugin`
         2. 🔨安装依赖
 
             `npm i --save-dev eslint@8 eslint-plugin-vue@9 @html-eslint/parser@0 @html-eslint/eslint-plugin@0 eslint-plugin-html@8 eslint-config-egg@13 eslint-config-prettier@9  stylelint@15 stylelint-config-standard@34 stylelint-config-css-modules@4.3.0 stylelint-scss@5 stylelint-config-standard-less@2 postcss-less@6 stylelint-config-standard-scss@11 postcss-scss@4 postcss-html@1 stylelint-config-html@1 stylelint-config-standard-vue@1  prettier@2  fabric-demo@0`
