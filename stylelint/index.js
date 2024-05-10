@@ -50,7 +50,7 @@ module.exports = {
   ],
   rules: {
     // 书写习惯
-    "alpha-value-notation": 'number',
+    "alpha-value-notation": ['number', { "severity": "warning" }],
 
     // 开启函数
     "function-no-unknown": [ true, { ignoreFunctions: [ "constant", "alpha" ] } ],
@@ -89,9 +89,9 @@ module.exports = {
 
     // prettier
     "declaration-block-single-line-max-declarations": null,
-    "rule-empty-line-before": "never",
-    "declaration-empty-line-before": "never",
-    "custom-property-empty-line-before": "never",
-    "comment-empty-line-before": "never",
+    "rule-empty-line-before": [ "never", { "severity": "warning" } ],
+    "declaration-empty-line-before": [ "never", { "severity": "warning" } ],
+    "custom-property-empty-line-before": [ "never", { "severity": "warning" } ],
+    "comment-empty-line-before": [ "never", { "severity": "warning" } ],
   }
 };
