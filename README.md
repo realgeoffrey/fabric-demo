@@ -74,8 +74,8 @@ eslint+prettier+stylelint + husky+Lint-staged for vue@2 and egg.js（excluding .
 
     ```json
     "eslint": "eslint --fix --cache --ext .js,.vue,.html .",
-    "stylelint": "stylelint **/*.{css,less,scss,vue,html} --fix --cache --quiet",
-    "prettier": "prettier **/*.{js,jsx,vue,flow,ts,tsx,css,less,scss,html,json,yml,yaml} --write --cache --no-error-on-unmatched-pattern"
+    "stylelint": "stylelint **/*.{css,less,scss,vue,html} *.{css,less,scss,vue,html} --fix --cache --quiet",
+    "prettier": "prettier **/*.{js,jsx,vue,flow,ts,tsx,css,less,scss,html,json,yml,yaml} *.{js,jsx,vue,flow,ts,tsx,css,less,scss,html,json,yml,yaml} --write --cache --no-error-on-unmatched-pattern"
     ```
 4. [husky](https://github.com/typicode/husky)@8
 
