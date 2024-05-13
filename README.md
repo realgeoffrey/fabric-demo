@@ -39,6 +39,7 @@ eslint+prettier+stylelint + husky+Lint-staged for vue@2 and egg.js（excluding .
 
         ```ignore
         **/app/public
+        *.min.*
         ```
 2. [stylelint](https://github.com/stylelint/stylelint)@15
 
@@ -54,6 +55,7 @@ eslint+prettier+stylelint + husky+Lint-staged for vue@2 and egg.js（excluding .
 
         ```ignore
         **/app/public
+        *.min.*
         ```
 3. [prettier](https://github.com/prettier/prettier)@2
 
@@ -69,6 +71,7 @@ eslint+prettier+stylelint + husky+Lint-staged for vue@2 and egg.js（excluding .
         ```ignore
         **/app/public
         package-lock.json
+        *.min.*
         ```
 - 🔧新增package.json的`scripts`中
 
