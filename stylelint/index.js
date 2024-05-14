@@ -12,8 +12,8 @@ module.exports = {
 
         // 解析有问题，只好关闭
         "less/color-no-invalid-hex": null,
-        "less/no-duplicate-variables": null
-      }
+        "less/no-duplicate-variables": null,
+      },
     },
     {
       files: [ "**/*.scss" ],
@@ -34,8 +34,8 @@ module.exports = {
         // prettier
         "scss/operator-no-unspaced": null,
         "scss/double-slash-comment-whitespace-inside": null,
-        "scss/double-slash-comment-empty-line-before": null
-      }
+        "scss/double-slash-comment-empty-line-before": null,
+      },
     },
     {
       files: [ "**/*.html" ],
@@ -51,7 +51,8 @@ module.exports = {
   ],
   rules: {
     // 书写习惯
-    "alpha-value-notation": ['number', { "severity": "warning" }],
+    "alpha-value-notation": null,
+    "color-function-notation": null,
 
     // 开启函数
     "function-no-unknown": [ true, { ignoreFunctions: [ "constant", "alpha" ] } ],
@@ -90,9 +91,9 @@ module.exports = {
 
     // prettier
     "declaration-block-single-line-max-declarations": null,
-    "rule-empty-line-before": [ "never", { "severity": "warning" } ],
-    "declaration-empty-line-before": [ "never", { "severity": "warning" } ],
-    "custom-property-empty-line-before": [ "never", { "severity": "warning" } ],
-    "comment-empty-line-before": [ "never", { "severity": "warning" } ],
-  }
+    "rule-empty-line-before": null,
+    "declaration-empty-line-before": null,
+    "custom-property-empty-line-before": null,
+    "comment-empty-line-before": null,
+  },
 };
