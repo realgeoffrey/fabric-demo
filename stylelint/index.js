@@ -34,6 +34,7 @@ module.exports = {
         // prettier
         "scss/operator-no-unspaced": null,
         "scss/double-slash-comment-whitespace-inside": null,
+        "scss/double-slash-comment-empty-line-before": null
       }
     },
     {
