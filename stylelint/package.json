@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-fabric-demo",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "main": "index.js",
   "peerDependencies": {
     "stylelint": "^15.11.0",
@@ -11,7 +11,7 @@
     "stylelint-config-standard-scss": "^11.1.0",
     "postcss-less": "^6.0.0",
     "postcss-scss": "^4.0.9",
-    "postcss-html": "^1.6.0",
+    "postcss-html": "^1.7.0",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-standard-vue": "^1.0.0"
   },
