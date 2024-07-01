@@ -50,9 +50,10 @@ module.exports = {
     },
   ],
   rules: {
-    // 书写习惯
-    "alpha-value-notation": null,
-    "color-function-notation": null,
+    // 书写习惯（会与less冲突）
+    "alpha-value-notation": null, // 颜色透明度
+    "color-function-notation": null, // 颜色函数
+    "declaration-block-no-redundant-longhand-properties": null, // 缩写
 
     // 开启函数
     "function-no-unknown": [ true, { ignoreFunctions: [ "constant", "alpha" ] } ],
