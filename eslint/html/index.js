@@ -11,9 +11,10 @@ module.exports = {
         // prettier
         '@html-eslint/no-extra-spacing-attrs': 0,
         '@html-eslint/element-newline': 0,
+        '@html-eslint/attrs-newline': 0,
         '@html-eslint/indent': 0,
         '@html-eslint/quotes': 0,
-        '@html-eslint/require-closing-tags': [ 0, { selfClosing: 'always', allowSelfClosingCustom: true } ],
+        '@html-eslint/require-closing-tags': [ 0, { selfClosing: 'always' } ],
       },
     },
     // 支持：.html文件的js代码
