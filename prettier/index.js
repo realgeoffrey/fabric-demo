@@ -4,4 +4,5 @@ module.exports = {
   trailingComma: 'all',
   proseWrap: 'never',
   printWidth: 160,
+  pluginSearchDirs: false
 };
