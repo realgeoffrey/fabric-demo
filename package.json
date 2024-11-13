@@ -1,12 +1,12 @@
 {
   "name": "fabric-demo",
-  "version": "1.2.14",
+  "version": "1.2.15",
   "main": "index.js",
   "dependencies": {
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.27.0",
-    "@html-eslint/parser": "^0.26.0",
-    "@html-eslint/eslint-plugin": "^0.26.0",
+    "@html-eslint/parser": "^0.27.0",
+    "@html-eslint/eslint-plugin": "^0.27.0",
     "eslint-plugin-html": "^8.1.1",
     "eslint-config-egg": "^13.1.0",
     "eslint-config-prettier": "^9.1.0",
