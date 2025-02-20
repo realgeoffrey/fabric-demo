@@ -99,17 +99,7 @@ eslint+prettier+stylelint + husky+Lint-staged for vue@2 and egg.js（excluding .
     2. 🛠️安装和配置husky（需要`commitlint`、`lint-staged`）
 
         `npx husky-init@8 && npm i && npx husky@8 set .husky/pre-commit "npm run lint-staged" && npx husky@8 set .husky/commit-msg 'npx --no -- commitlint --edit "$1"'`
-5. [commitlint](https://github.com/conventional-changelog/commitlint)@17
-
-    1. 🛠️安装依赖
-
-        `npm i --save-dev @commitlint/config-conventional@17 @commitlint/cli@17`
-    2. 🔧配置`项目根目录/commitlint.config.js`
-
-        ```js
-        module.exports = {extends: ['@commitlint/config-conventional']};
-        ```
-6. [lint-staged](https://github.com/lint-staged/lint-staged)@14
+5. [lint-staged](https://github.com/lint-staged/lint-staged)@14
 
     1. 🔨安装依赖
 
@@ -127,6 +117,16 @@ eslint+prettier+stylelint + husky+Lint-staged for vue@2 and egg.js（excluding .
 
         ```json
         "lint-staged": "lint-staged -p false"
+        ```
+6. [commitlint](https://github.com/conventional-changelog/commitlint)@17
+
+    1. 🛠️安装依赖
+
+        `npm i --save-dev @commitlint/config-conventional@17 @commitlint/cli@17`
+    2. 🔧配置`项目根目录/commitlint.config.js`
+
+        ```js
+        module.exports = {extends: ['@commitlint/config-conventional']};
         ```
 7. 其他
 
