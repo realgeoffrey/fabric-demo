@@ -80,6 +80,9 @@ eslint+prettier+stylelint + husky+Lint-staged for vue@2 and egg.js（excluding .
     "stylelint": "stylelint **/*.{css,less,scss,vue,html} *.{css,less,scss,vue,html} --fix --cache --quiet",
     "prettier": "prettier **/*.{js,jsx,vue,flow,ts,tsx,css,less,scss,html,json,yml,yaml} *.{js,jsx,vue,flow,ts,tsx,css,less,scss,html,json,yml,yaml} --write --cache --no-error-on-unmatched-pattern"
     ```
+
+---
+
 4. [husky](https://github.com/typicode/husky)@8
 
     1. 🗑删除package.json内配置：
@@ -134,7 +137,7 @@ eslint+prettier+stylelint + husky+Lint-staged for vue@2 and egg.js（excluding .
         .eslintcache
         .stylelintcache
         ```
-    2. 🔧（可选）全局安装、配置[git cz](https://github.com/commitizen/cz-cli)
+    2. （可选）全局安装、配置[git cz](https://github.com/commitizen/cz-cli)
 
         >`commitlint`和`commitizen`使用一份配置。
 
