@@ -120,14 +120,28 @@ eslint+prettier+stylelint + husky+Lint-staged for vue@2 and egg.js（excluding .
         ```
 6. [commitlint](https://github.com/conventional-changelog/commitlint)@17
 
-    1. 🛠️安装依赖
+    1. 方案一（本地安装、配置）
 
-        `npm i --save-dev @commitlint/config-conventional@17 @commitlint/cli@17`
-    2. 🔧配置`项目根目录/commitlint.config.js`
+        1. 🔨安装依赖
 
-        ```js
-        module.exports = {extends: ['@commitlint/config-conventional']};
-        ```
+            `npm i --save-dev @commitlint/config-conventional@17 @commitlint/cli@17`
+        2. 🔧配置`项目根目录/.commitlintrc.js`
+
+            ```js
+            module.exports = {extends: ['@commitlint/config-conventional']};
+            ```
+    2. <details>
+
+        <summary>方案二（全局安装、配置）</summary>
+
+        1. 🛠️全局安装依赖、添加配置
+
+            ```shell
+            npm i -g @commitlint/config-conventional@17 @commitlint/cli@17
+
+            echo "module.exports = {extends: ['@commitlint/config-conventional']};" > ~/.commitlintrc.js
+            ```
+        </details>
 7. 其他
 
     1. 🔧（可选）按需新增`项目根目录/.gitignore`，如：
@@ -139,16 +153,16 @@ eslint+prettier+stylelint + husky+Lint-staged for vue@2 and egg.js（excluding .
         ```
     2. （可选）全局安装、配置[git cz](https://github.com/commitizen/cz-cli)
 
-        >`commitlint`和`commitizen`使用一份配置。
+        >`commitlint`和`commitizen`使用同一份配置。
 
-        1. 🔨全局安装依赖、添加配置：
+        1. 🛠️全局安装依赖、添加配置
 
             ```shell
             npm i -g commitizen @commitlint/cz-commitlint
 
             echo '{ "path": "@commitlint/cz-commitlint" }' > ~/.czrc
             ```
-        2. 🗑删除本地的依赖：
+        2. 🗑删除本地的依赖
 
             `npm uninstall commitizen @commitlint/cz-commitlint cz-conventional-changelog cz-customizable`
         3. 🗑删除package.json内配置：
