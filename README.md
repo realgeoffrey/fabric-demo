@@ -80,7 +80,13 @@ eslint+prettier+stylelint + husky+Lint-staged for vue@2 and egg.js（excluding .
     "stylelint": "stylelint **/*.{css,less,scss,vue,html} *.{css,less,scss,vue,html} --fix --cache --quiet",
     "prettier": "prettier **/*.{js,jsx,vue,flow,ts,tsx,css,less,scss,html,json,yml,yaml} *.{js,jsx,vue,flow,ts,tsx,css,less,scss,html,json,yml,yaml} --write --cache --no-error-on-unmatched-pattern"
     ```
+- 🔧新增`项目根目录/.gitignore`
 
+    ```ignore
+    # 保留之前的配置，新增：
+    .eslintcache
+    .stylelintcache
+    ```
 ---
 
 4. [husky](https://github.com/typicode/husky)@8
@@ -141,17 +147,14 @@ eslint+prettier+stylelint + husky+Lint-staged for vue@2 and egg.js（excluding .
 
             echo "module.exports = {extends: ['@commitlint/config-conventional']};" > ~/.commitlintrc.js
             ```
+        2. 🗑删除本地的依赖
+
+            `npm uninstall @commitlint/config-conventional @commitlint/cli`
+        3. 🗑删除[本地配置](https://github.com/conventional-changelog/commitlint#config)
         </details>
 7. 其他
 
-    1. 🔧（可选）按需新增`项目根目录/.gitignore`，如：
-
-        ```ignore
-        # 保留之前的配置，新增：
-        .eslintcache
-        .stylelintcache
-        ```
-    2. （可选）全局安装、配置[git cz](https://github.com/commitizen/cz-cli)
+    1. （可选）全局安装、配置[git cz](https://github.com/commitizen/cz-cli)
 
         >`commitlint`和`commitizen`使用同一份配置。
 
