@@ -154,30 +154,52 @@ eslint+prettier+stylelint + husky+Lint-staged for vue@2 and egg.js（excluding .
         </details>
 7. 其他
 
-    1. （可选）全局安装、配置[git cz](https://github.com/commitizen/cz-cli)
+    1. [git cz](https://github.com/commitizen/cz-cli)
 
-        >`commitlint`和`commitizen`使用同一份配置。
+        1. 🔨全局安装依赖
 
-        1. 🛠️全局安装依赖、添加配置
+            `npm i -g commitizen`
+        2. `commitizen`和`commitlint`使用同一份配置
 
-            ```shell
-            npm i -g commitizen @commitlint/cz-commitlint
+            1. 方案一（本地安装、配置）
 
-            echo '{ "path": "@commitlint/cz-commitlint" }' > ~/.czrc
-            ```
-        2. 🗑删除本地的依赖
+                1. 🔨安装依赖
 
-            `npm uninstall commitizen @commitlint/cz-commitlint cz-conventional-changelog cz-customizable`
-        3. 🗑删除package.json内配置：
+                    `npm i --save-dev @commitlint/cz-commitlint`
+                2. 🔧配置package.json
 
-            ```json
-            # 删除以下全部：
-            "config": {
-              "commitizen": {
-                "path": "cz-conventional-changelog"
-              }
-            }
-            ```
+                    ```json
+                    "config": {
+                      "commitizen": {
+                        "path": "@commitlint/cz-commitlint"
+                      }
+                    }
+                    ```
+            2. <details>
+
+                <summary>方案二（全局安装、配置）</summary>
+
+                1. 🛠️全局安装依赖、添加配置
+
+                    ```shell
+                    npm i -g @commitlint/cz-commitlint
+
+                    echo '{ "path": "@commitlint/cz-commitlint" }' > ~/.czrc
+                    ```
+                2. 🗑删除本地的依赖
+
+                    `npm uninstall commitizen @commitlint/cz-commitlint cz-conventional-changelog cz-customizable`
+                3. 🗑删除package.json内配置：
+
+                    ```json
+                    # 删除以下全部：
+                    "config": {
+                      "commitizen": {
+                        "path": "cz-conventional-changelog"
+                      }
+                    }
+                    ```
+                </details>
 
 ---
 #### 理念
