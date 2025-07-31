@@ -152,14 +152,14 @@ eslint+prettier+stylelint + husky+Lint-staged for vue@2 and egg.js（excluding .
             `npm uninstall @commitlint/config-conventional @commitlint/cli`
         3. 🗑删除[本地配置](https://github.com/conventional-changelog/commitlint#config)
         </details>
-7. 其他
+7. 其他（可选）
 
     1. [git cz](https://github.com/commitizen/cz-cli)
 
         1. 🔨全局安装依赖
 
             `npm i -g commitizen`
-        2. `commitizen`和`commitlint`使用同一份配置
+        2. `commitizen`和`commitlint`使用同一份配置（依赖`commitlint`）
 
             1. 方案一（本地安装、配置）
 
