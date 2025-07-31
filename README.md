@@ -159,47 +159,62 @@ eslint+prettier+stylelint + husky+Lint-staged for vue@2 and egg.js（excluding .
         1. 🔨全局安装依赖
 
             `npm i -g commitizen`
-        2. `commitizen`和`commitlint`使用同一份配置（依赖`commitlint`）
+        2. 适配器选择
 
-            1. 方案一（本地安装、配置）
+            1. 方案一：默认适配器
 
-                1. 🔨安装依赖
+                🔧配置package.json
 
-                    `npm i --save-dev @commitlint/cz-commitlint`
-                2. 🔧配置package.json
+                ```json
+                "config": {
+                  "commitizen": {
+                    "path": "cz-conventional-changelog"
+                  }
+                }
+                ```
+            2. 方案二：用`commitlint`配置作为适配器
 
-                    ```json
-                    "config": {
-                      "commitizen": {
-                        "path": "@commitlint/cz-commitlint"
-                      }
-                    }
-                    ```
-            2. <details>
+                >`commitizen`和`commitlint`使用同一份配置
 
-                <summary>方案二（全局安装、配置）</summary>
+                1. 方案一（本地安装、配置）
 
-                1. 🛠️全局安装依赖、添加配置
+                    1. 🔨安装依赖
 
-                    ```shell
-                    npm i -g @commitlint/cz-commitlint
+                        `npm i --save-dev @commitlint/cz-commitlint`
+                    2. 🔧配置package.json
 
-                    echo '{ "path": "@commitlint/cz-commitlint" }' > ~/.czrc
-                    ```
-                2. 🗑删除本地的依赖
+                        ```json
+                        "config": {
+                          "commitizen": {
+                            "path": "@commitlint/cz-commitlint"
+                          }
+                        }
+                        ```
+                2. <details>
 
-                    `npm uninstall commitizen @commitlint/cz-commitlint cz-conventional-changelog cz-customizable`
-                3. 🗑删除package.json内配置：
+                    <summary>方案二（全局安装、配置）</summary>
 
-                    ```json
-                    # 删除以下全部：
-                    "config": {
-                      "commitizen": {
-                        "path": "cz-conventional-changelog"
-                      }
-                    }
-                    ```
-                </details>
+                    1. 🛠️全局安装依赖、添加配置
+
+                        ```shell
+                        npm i -g @commitlint/cz-commitlint
+
+                        echo '{ "path": "@commitlint/cz-commitlint" }' > ~/.czrc
+                        ```
+                    2. 🗑删除本地的依赖
+
+                        `npm uninstall commitizen @commitlint/cz-commitlint cz-conventional-changelog cz-customizable`
+                    3. 🗑删除package.json内配置：
+
+                        ```json
+                        # 删除以下全部：
+                        "config": {
+                          "commitizen": {
+                            "path": "cz-conventional-changelog"
+                          }
+                        }
+                        ```
+                    </details>
 
 ---
 #### 理念
