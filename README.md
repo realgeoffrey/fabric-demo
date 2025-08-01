@@ -1,10 +1,8 @@
 # fabric-demo
 eslint+prettier+stylelint + husky+Lint-staged for vue@2 and egg.js（excluding .ts）.
 
-<a href="https://www.npmjs.com/package/fabric-demo">
-  <img alt="NPM Version" src="https://img.shields.io/npm/v/fabric-demo">
-</a>
-<img alt="Node Current" src="https://img.shields.io/node/v/fabric-demo">
+[![NPM Version](https://img.shields.io/npm/v/fabric-demo)](https://www.npmjs.com/package/fabric-demo)
+![Node Current](https://img.shields.io/node/v/fabric-demo)
 
 0. 起步（安装方式二选一）
 
