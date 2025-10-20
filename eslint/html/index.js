@@ -6,7 +6,8 @@ module.exports = {
       plugins: [ '@html-eslint' ],
       files: [ '*.html' ],
       parser: '@html-eslint/parser',
-      extends: [ 'plugin:@html-eslint/recommended' ],
+      // If you are using ESLint version v8 or earlier, you can configure it as follows.
+      extends: ['plugin:@html-eslint/recommended-legacy'],
       rules: {
         // prettier
         '@html-eslint/no-extra-spacing-attrs': 0,
